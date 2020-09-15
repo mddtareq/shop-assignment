@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenox</title>
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- icon and social link -->
+        <div class="container head icon-style d-flex ">
+            <div class="d-flex">
+                <img src="./images/icon.png" alt="">
+                <h3>lenox <sub>store</sub> </h3>
+            </div>
+            <div class="d-flex ml-auto">
+                <a class="social" href="#twitter">
+                    <img src="./images/blacktwitter.png" alt="">
+                </a>
+                <a class="social" href="#google">
+                    <img src="./images/blackgoogle.png" alt="">
+                </a>
+                <a class="social" href="#facebook">
+                    <img src="./images/blackfacebook.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark icon-style">
+            <div class="container">
+                <a class="navbar-brand" href="#search">
+                    <img src="./images/search.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#campaign">Campaign</a>
+                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link active" href="index.html">Store</a>
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#favourite">
+                            <img src="./images/favourite.png" alt="">
+                        </a>
+                        <a class="nav-link" href="#cart">
+                            <img src="./images/cart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcrumb -->
+        <div class="container head">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li class="breadcrumb-item "><a href="index.html">Store</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+                <div class="rqw">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <hr>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- title -->
+        <section class='container title'>
+            <h1>Your Shopping Cart</h1>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row cart-head-title">
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                PRODUCT
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                                PRICE
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                QTY
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                                TOTAL
+                            </div>
+                        </div>
+                        <div class="row first-items">
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 d-flex align-items-center cart-item-style">
+                                <p>X</p>
+                                <img src="./images/gray.jpg" alt="">
+                                <p>'Design and Typography' by G. williams</p>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex align-items-center">
+                                $<span id="product1price">40.99</span>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-flex align-items-center">
+                                <div class="d-flex quantity">
+                                    <button id="product1minus" class="btn btn-default"><i><</i></button>
+                                    <input id="product1quantity" type="text" class="form" value="1">
+                                    <button id="product1plus" class="btn btn-default"><i>></i></button>
+                                 </div>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex align-items-center">
+                                $<span id="product1totalPrice">40.99</span>
+                            </div>
+                        </div>
+                        <div class="row second-items">
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 d-flex align-items-center cart-item-style">
+                                <p>X</p>
+                                <img src="./images/gray.jpg" alt="">
+                                <p>Lifestyle magazine Kinfolk</p>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex align-items-center">
+                                $<span id="product2price">80.99</span>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-flex align-items-center">
+                                <div class="d-flex quantity">
+                                    <button id="product2minus" class="btn btn-default"><i><</i></button>
+                                    <input id="product2quantity" type="text" class="form" value="1">
+                                    <button id="product2plus" class="btn btn-default"><i>></i></button>
+                                 </div>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex align-items-center">
+                                $<span id="product2totalPrice">80.99</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row coupon">
+                            <div class="col-md-12 cart-cart-style">
+                                COUPON CODE
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text"  placeholder="Coupon Code">
+                            </div>
+                        </div>
+                        <div class="row shipping">
+                            <div class="col-md-12 cart-cart-style">
+                                CALCULATE SHIPPING
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text"  placeholder="Country">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text"  placeholder="State/City">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text"  placeholder="Postcode/Zip">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-9">
+                        <button type="button" class="btn btn-color back-home"> <a href="index.html">Back Home</a></button>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-12 checkout-cart-style text-center">
+                            Update Cart
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Subtotal</p>
+                            <p class="category-text-style ml-auto bold">$ <span id="productsSubTotalPrice">121.98</span></p>
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Shipping</p>
+                            <p class="category-text-style ml-auto bold">$<span id="productsShipping">5</span></p>
+                        </div>
+                        <hr>
+                        <div class='d-flex bold'>
+                            <p class="category-text-style">Total</p>
+                            <p class="category-text-style ml-auto">$ <span id="productsTotalPrice">126.98</span></p>
+                        </div>
+                        <div class="col-md-12 proceed-cart-style text-center">
+                            Proceed to Checkout
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="lower">
+            <div class="container">
+                <div class="row content">
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Get in touch</h5>
+                        <p>King Street,Melbourne</p>
+                        <p>Victoria 3000 Australia</p>
+                        <h6>8 8005958212</h6>
+                        <p>mail@gmail.com</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Useful Link</h5>
+                        <ul class="list">
+                            <li>Alice</li>
+                            <li>Wondered</li>
+                            <li>Companion</li>
+                            <li>Wondered</li>
+                            <li>Modesty</li>
+                            <li>Queen</li>
+                            <li>Satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Recent Post</h5>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/gray.jpg" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-7 item-text-style">
+                                <p>Looking cautiously round,to ascertain that they</p>
+                                <p>September 28,2016</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/gray.jpg" alt="">
+                            </div>
+                            <div class="col-md-12 col-lg-7 item-text-style">
+                                <p>Revolutions of government has would make his</p>
+                                <p>September 24,2016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Feedback</h5>
+                        <input class="feedback form-control form-style" type="email" placeholder="email"></input>
+                        <textarea class="feedback form-control form-style" name="" id="" cols="23" rows="5"
+                            placeholder="message"></textarea>
+                        <button type="button" class="feedback btn btn-secondary">Submit form</button>
+                    </div>
+                </div>
+                <div class="container row low">
+                    <img src="./images/whitetwitter.png" alt="">
+                    <img src="./images/whitegoogle.png" alt="">
+                    <img src="./images/whitefacebook.png" alt="">
+                    <img src="./images/whitelinkedin.png" alt="">
+                    <img src="./images/whiteyoutube.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class='copyright'>
+            <div class="container d-flex">
+                <p>&copy; 2016 - Lenox Multi-Concept Template</p>
+                <p class='ml-auto'>Created by
+                    <img src="./images/icon.png" alt="">
+                    Tareq</p>
+            </div>
+
+        </section>
+    </footer>
+    <script src="./js/custom/calculation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
