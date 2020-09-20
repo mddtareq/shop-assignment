@@ -43,6 +43,7 @@
 .card-text-style{
     color:gray;
     font-size:11px;
+    height: 15px;
 }
 .sale{
     position: relative;
@@ -103,39 +104,8 @@
 }
 /* 5 star */
 .rate {
-    float: left;
-    height:30px;
+    height:25px;
     margin-bottom: 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:18px;
-    color:#ccc;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: black;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: black;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: black;
 }
 .previous-price{
     margin-right: 10px;
@@ -288,9 +258,9 @@ height: 100px;
 }
 .form{
     text-align: center;
-    width: 30px;
+    width: 28px;
     border:none;
-    background-color:rgba(146, 144, 144, 0);
+    background-color:rgba(210, 210, 210, 0);
 }
 .quantity{
     background-color:rgba(146, 144, 144, 0.207);
@@ -356,4 +326,23 @@ border:none;
     border-radius: 5px;
     padding:4px;
     cursor: pointer;
+}
+.cross{
+    background-color:white;
+    border: none;
+    outline:none !important;
+}
+.btnMProduct{
+    outline:none!important;
+    background-color:rgba(210, 210, 210, 0);
+    border-radius: 2px;
+    border: none;
+    margin-left:5px;
+}
+.btnPProduct{
+    outline:none!important;
+    background-color:rgba(210, 210, 210, 0);
+    border-radius: 2px;
+    border: none;
+    margin-left: 5px;
 }
