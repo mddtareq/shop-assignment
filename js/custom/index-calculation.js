@@ -1,3 +1,4 @@
+let items=1;
 const firstC = document.getElementById('firstB');
 firstC.addEventListener('click', function () {
     const firstItemsC = document.getElementById('see-first-cart');
@@ -7,6 +8,8 @@ firstC.addEventListener('click', function () {
     const firstPrice=document.getElementById('cart-first-price').innerText;
     const price = parseFloat(firstPrice);
     subTotal(-1*price)
+    items--;
+    itemsF()
 })
 const secondC = document.getElementById('secondB');
 secondC.addEventListener('click', function () {
@@ -17,6 +20,8 @@ secondC.addEventListener('click', function () {
     const secondPrice=document.getElementById('cart-second-price').innerText;
     const price = parseFloat(secondPrice);
     subTotal(-1*price)
+    items--;
+    itemsF()
 })
 const first = document.getElementById('first');
 first.addEventListener('click', function () {
@@ -27,6 +32,8 @@ first.addEventListener('click', function () {
     const firstPrice=document.getElementById('first-price').innerText;
     const price = parseFloat(firstPrice);
     subTotal(-1*price)
+    items--;
+    itemsF()
 })
 const second = document.getElementById('second');
 second.addEventListener('click', function () {
@@ -37,29 +44,16 @@ second.addEventListener('click', function () {
     const secondPrice=document.getElementById('second-price').innerText;
     const price = parseFloat(secondPrice);
     subTotal(-1*price)
+    items--;
+    itemsF()
 })
 function subTotal(singlePrice) {
     const subTotal = document.getElementById('sub-total').innerText;
     const subTotalNumber = parseFloat(subTotal);
     document.getElementById('sub-total').innerText = (subTotalNumber + singlePrice).toFixed(2);
 }
-// $(".pop").popover({ trigger: "manual" , html: true, animation:false})
-//     .on("mouseenter", function () {
-//         var _this = this;
-//         $(this).popover("show");
-//         $(".popover").on("mouseleave", function () {
-//             $(_this).popover('hide');
-//         });
-//     }).on("mouseleave", function () {
-//         var _this = this;
-//         setTimeout(function () {
-//             if (!$(".popover:hover").length) {
-//                 $(_this).popover("hide");
-//             }
-//         }, 300);
-// });
-const cart = document.getElementById('tryy');
-cart.addEventListener('click', function () {
+const cart = document.getElementById('cart-button');
+cart.addEventListener('mouseover', function () {
     const cartDisplay= document.getElementById("see-cart");
     cartDisplay.style.display = 'block';
 })
@@ -68,3 +62,8 @@ cartHide.addEventListener('click', function () {
     const cartDisplay= document.getElementById("see-cart");
     cartDisplay.style.display = 'none';
 })
+function itemsF() {
+    if (items<0) {
+        document.getElementById("nothing").style.display='block';
+    }
+}

@@ -7,11 +7,6 @@
     <title>Lenox</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom/style.css">
-    <!-- <script data-require="jquery@*" data-semver="2.1.1"
-        src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script data-require="bootstrap@*" data-semver="3.2.0"
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script> -->
-
 </head>
 
 <body>
@@ -57,28 +52,13 @@
                             <img src="./images/favourite.png" alt="">
                         </a>
                         <a class="nav-link cart-view" href="#cart">
-                            <!-- <button class="data-hover pop" data-container="body" data-toggle="popover"
-                                data-placement="bottom"
-                                data-content='<p id="see-first-cart"> <button id="firstB" class="cross">X</button> DESIGN AND TYPOGRAPHY BY G. WILLIAMS, BOOK(1 x $ <span id="cart-first-price">40.99</span> )</p>
-                                <br>
-                                <p id="see-second-cart"> <button id="secondB" class="cross">X</button> BIG ENVELOP MOCKUP PDF AND PSD PACK(1 x $ <span id="cart-second-price">150</span>)</p>'
-                                data-original-title="<h5>Cart Items</h5>" title="">
-                                <img src="./images/cart.png" alt="">
-                            </button> -->
-                            <img id="tryy" src="./images/cart.png" alt="">
-                            
+                            <img id="cart-button" src="./images/cart.png" alt="">
+
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div id="see-cart" class="cart-all">
-            <p id="see-first-cart"> <button id='firstB' class='cross'>X</button> DESIGN AND TYPOGRAPHY BY G. WILLIAMS,
-                BOOK(1 x $ <span id="cart-first-price">40.99</span> )</p>
-            <p id="see-second-cart"> <button id='secondB' class='cross'>X</button> BIG ENVELOP MOCKUP PDF AND PSD PACK(1
-                x $ <span id="cart-second-price">150</span>)</p>
-                <button id='hide-cart'>Hide Cart</button>
-        </div>
         <!-- breadcrumb -->
         <div class="container head">
             <nav aria-label="breadcrumb">
@@ -86,13 +66,34 @@
                     <li class="breadcrumb-item "><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Store</li>
                 </ol>
-                <div class="rqw">
+                <div class="row">
                     <div class="col-4 col-sm-4 col-md-3 col-lg-2">
                         <hr>
                     </div>
                 </div>
-
             </nav>
+            <div id="see-cart" class="cart-all ml-auto">
+                <div id="see-first-cart" class='mini-cart align-items-center '>
+                    <img src="./images/gray.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>DESIGN AND TYPOGRAPHY BY G. WILLIAMS,BOOK</p>
+                        <p>Price : $<span id="cart-first-price">40.99</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='firstB' class='btn btn-danger  ml-auto'>X</button>
+                </div>
+                <div id="see-second-cart" class='mini-cart align-items-center'>
+                    <img src="./images/gray.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>BIG ENVELOP MOCKUP PDF AND PSD PACK</p>
+                        <p>Price : $<span id="cart-second-price">150</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='secondB' class='btn btn-danger ml-auto'>X</button>
+                </div> 
+                <h4 id='nothing'>No items in your cart</h4>
+                <button class="btn btn-info" id='hide-cart'>Hide Cart</button>
+            </div>
         </div>
     </header>
 
