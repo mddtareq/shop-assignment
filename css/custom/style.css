@@ -3,6 +3,17 @@
     height:20px ;
     width: 20px;
 }
+.cart-items-number{
+    position: relative;
+}
+.cart-items-number .show-number{
+    position:absolute;
+    top: 0%;
+    right: 0%;
+    font-size:12px;
+    font-weight: bold;
+    color:red;
+}
 #nothing{
     display:none;
     color:#fff;

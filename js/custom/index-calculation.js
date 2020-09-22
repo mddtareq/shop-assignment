@@ -66,4 +66,8 @@ function itemsF() {
     if (items<0) {
         document.getElementById("nothing").style.display='block';
     }
+    itemNumber();
+}
+function itemNumber(){
+        document.getElementById("cart-size-number").innerText=items+1;
 }
