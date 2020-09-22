@@ -1,10 +1,19 @@
 /* icon style */
+.navbar a{
+
+}
 .icon-style img{
     height:20px ;
     width: 20px;
 }
 .cart-items-number{
     position: relative;
+}
+@media only screen and (max-width: 575px) {
+    .cart-items-number{
+        width: 6%;
+        position: relative;
+    }
 }
 .cart-items-number .show-number{
     position:absolute;
