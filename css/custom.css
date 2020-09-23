@@ -19,6 +19,9 @@
     .half-details{
         margin-top: 20px;
     }
+    .ccb{
+        margin-top: 20px;
+    }
 }
 @media only screen and (max-width: 766px) and (min-width: 576px)  {
     .pop-large-image img{
@@ -26,6 +29,9 @@
         height:200px!important;
     }
     .half-details{
+        margin-top: 20px;
+    }
+    .ccb{
         margin-top: 20px;
     }
 }
