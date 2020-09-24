@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenox</title>
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom/store.css">
+</head>
+
+<body>
+    <header>
+        <!-- icon and social link -->
+        <div class="container head icon-style d-flex ">
+            <div class="d-flex">
+                <img src="./images/icons/icon.png" alt="">
+                <h3>lenox <sub>store</sub> </h3>
+            </div>
+            <div class="d-flex ml-auto">
+                <a class="social" href="#twitter">
+                    <img src="./images/icons/blacktwitter.png" alt="">
+                </a>
+                <a class="social" href="#google">
+                    <img src="./images/icons/blackgoogle.png" alt="">
+                </a>
+                <a class="social" href="#facebook">
+                    <img src="./images/icons/blackfacebook.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark icon-style">
+            <div class="container">
+                <a class="navbar-brand" href="#search">
+                    <img src="./images/icons/search.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#campaign">Campaign</a>
+                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link active" href="store.html">Store</a>
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#favourite">
+                            <img src="./images/icons/favourite.png" alt="">
+                        </a>
+                        <a class="nav-link cart-view cart-items-number">
+                            <img id="cart-button" src="./images/icons/cart.png" alt="">
+                            <div class="show-number">
+                                <span id="cart-size-number">2</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcrumb -->
+        <div class="container head">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li class="breadcrumb-item "><a href="/index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Store</li>
+                </ol>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <hr>
+                    </div>
+                </div>
+            </nav>
+            <div id="see-cart" class="cart-all ml-auto">
+                <div id="see-first-cart" class='mini-cart align-items-center '>
+                    <img src="./images/items/item1.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>DESIGN AND TYPOGRAPHY BY G. WILLIAMS,BOOK</p>
+                        <p>Price : $<span id="cart-first-price">40.99</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='firstB' class='btn btn-danger  ml-auto'>X</button>
+                </div>
+                <div id="see-second-cart" class='mini-cart align-items-center'>
+                    <img src="./images/items/item2.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>BIG ENVELOP MOCKUP PDF AND PSD PACK</p>
+                        <p>Price : $<span id="cart-second-price">150</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='secondB' class='btn btn-danger ml-auto'>X</button>
+                </div>
+                <h4 id='nothing'>No items in your cart</h4>
+                <button class="btn btn-info" id='hide-cart'>Hide Cart</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- title -->
+        <section class='container title'>
+            <h1>Store</h1>
+        </section>
+        <!-- shop & cart -->
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-sm-8 col-md-7 col-lg-8">
+                    <div class="row items">
+                        <div class="col-11 col-sm-6 col-md-4 col-lg-4">
+                            <select class="form-control">
+                                <option>Default sorting</option>
+                            </select>
+                        </div>
+                        <div class="col-1 col-sm-1 col-md-4 col-lg-4"></div>
+                        <div class="col-12 col-sm-5 col-md-4 col-lg-4">
+                            <p class='text-color'>Showing 1-9 from 18 results</p>
+                        </div>
+                    </div>
+                    <!-- items -->
+                    <div class="row">
+                        <!-- <div class="col-1 col-sm-1"></div> -->
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="./images/items/item3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">PAPER BACK BOOK ' I AM HERE NOW '</p>
+                                    <h4 class="price-style">$60.99</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="./images/items/item4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">DRINKING VINEGAR VINYL BOTTLE</p>
+                                    <h4 class="price-style">$80.99</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="sale">
+                                    <img src="./images/items/item5.jpg" class="card-img-top" alt="...">
+                                    <button type="button" class="btn btn-danger">sale</button>
+                                    <p class="wishlist">Add to wishlist <img src="./images/icons/love.png" alt=""></p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">MAN BUN HELVETICA FUN DOG PAPERBACK BOOK</p>
+                                    <h4 class="price-style"><span class="previous-price">$50</span>$30</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="new-in">
+                                    <img src="./images/items/item6.jpg" class="card-img-top" alt="...">
+                                    <button type="button" class="btn btn-success">New In</button>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">DESIGNER SKETCH PAPER 100 IN PACK</p>
+                                    <h4 class="price-style">$70</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="./images/items/item7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">THUNDEROUS CHARGE/SYNC USB CABLE IN RED</p>
+                                    <h4 class="price-style">$80.50</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="./images/items/item8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">NICE BOTTLE WITH METALL COVER</p>
+                                    <h4 class="price-style">$20</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="./images/items/item9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">MINI CAMERA DURABLE CASING</p>
+                                    <h4 class="price-style">$80.50</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="./images/items/item10.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">LIFESTYLE BOOK PAPERBACK</p>
+                                    <h4 class="price-style">$60.30</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="./images/items/item11.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-text-style">GIGANTIC ICE CREAM POOL FLOAT</p>
+                                    <h4 class="price-style">$80</h4>
+                                    <br>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <a href="#" class="btn btn-color">
+                                        <img src="./images/icons/cart1.png" alt="">
+                                        Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="d-flex ml-auto anchor">
+                                <a href="" active>1</a>
+                                <a href="">2</a>
+                                <a href="">3</a>
+                                <a href="">></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart -->
+                <div class="col-12 col-sm-4 col-md-5 col-lg-4">
+                    <div class="row cart">
+                        <div>
+                            <img src="./images/icons/search.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="cart-text-style">
+                            YOUR CART
+                        </h3>
+                        <hr>
+                        <!-- cart items -->
+                        <div id="first-items" class="row cart-items">
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-5">
+                                <img src="./images/items/item1.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-8 col-lg-7 item-text-style">
+                                <p>DESIGN AND TYPOGRAPHY BY G. WILLIAMS, BOOK</p>
+                                <p>1 x $ <span id='first-price'>40.99</span> </p>
+                                <button class="cross" id='first'><span class="bold">X</span> REMOVE</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="second-items" class="row cart-items">
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-5">
+                                <img src="./images/items/item2.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-8 col-lg-7 item-text-style">
+                                <p>BIG ENVELOP MOCKUP PDF AND PSD PACK</p>
+                                <p>1 x $ <span id='second-price'>150</span> </p>
+                                <button class="cross" id='second'><span class="bold">X</span> REMOVE</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>SUBTOTAL : $ <span id='sub-total'>190.99</span></p>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="button" class="btn btn-color anchor-style"><a href="cart.html">View
+                                        Cart</a></button>
+                                <button type="button" class="btn btn-color">See Items</button>
+                            </div>
+                        </div>
+                        <!-- category -->
+                        <div class="category">
+                            <p class="cart-text-style">PRODUCT CATEGORIES</p>
+                            <hr>
+                            <div class='d-flex'>
+                                <p class="category-text-style">All categories</p>
+                                <p class="category-text-style ml-auto">225</p>
+                            </div>
+                            <div class='d-flex'>
+                                <p class="category-text-style">Gifts</p>
+                                <p class="category-text-style ml-auto">80</p>
+                            </div>
+                            <div class='d-flex'>
+                                <p class="category-text-style">Digital goods</p>
+                                <p class="category-text-style ml-auto">15</p>
+                            </div>
+                            <div class='d-flex'>
+                                <p class="category-text-style">Printed products</p>
+                                <p class="category-text-style ml-auto">20</p>
+                            </div>
+                            <div class='d-flex'>
+                                <p class="category-text-style">Books</p>
+                                <p class="category-text-style ml-auto">45</p>
+                            </div>
+                            <div class='d-flex'>
+                                <p class="category-text-style">Other</p>
+                                <p class="category-text-style ml-auto">65</p>
+                            </div>
+                        </div>
+                        <!-- filter -->
+                        <div>
+                            <p class="cart-text-style">FILTER BY PRICE</p>
+                            <hr>
+                            <hr class="filter-hr">
+                            <div>
+                                <button type="button" class="btn btn-color">Filter</button>
+                                <p class="filter-price filter category-text-style">Price: $60-$200</p>
+                            </div>
+
+                        </div>
+                        <!-- tags -->
+                        <div class="Tags">
+                            <h3 class="cart-text-style">TAGS</h3>
+                            <hr>
+                            <div class="row">
+                                <tags class="tags-topic">Photo</tags>
+                                <tags class="tags-topic">Design</tags>
+                                <tags class="tags-topic">Development</tags>
+                                <tags class="tags-topic">BlogPost</tags>
+                                <tags class="tags-topic">PhotoWeb</tags>
+                            </div>
+                        </div>
+                        <!-- top rated -->
+                        <div class="top-rated">
+                            <p class="cart-text-style">TOP RATED</p>
+                            <hr>
+                            <div class="row cart-items">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-5">
+                                    <img src="./images/items/item12.jpg" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-8 col-lg-7 item-text-style">
+                                    <p>ON-LINE STORE APP WEB TEMPLATE</p>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <p class="star-style">$70</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row cart-items">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-5">
+                                    <img src="./images/items/item13.jpg" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-8 col-lg-7 item-text-style">
+                                    <p>BRAND IDENTITY TEMPLATE PSD PACK</p>
+                                    <div class="rate">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+                                    <p class="star-style">$50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="portfolio">
+            <div class="container">
+                <h5>And that is not all!Want to see more interesting works in our portfolio?</h5>
+                <button type="button" class="btn btn-color">See More</button>
+            </div>
+        </section>
+        <section class="lower">
+            <div class="container">
+                <div class="row content">
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Get in touch</h5>
+                        <p>King Street,Melbourne</p>
+                        <p>Victoria 3000 Australia</p>
+                        <h6>8 8005958212</h6>
+                        <p>mail@gmail.com</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Useful Link</h5>
+                        <ul class="list">
+                            <li>Alice</li>
+                            <li>Wondered</li>
+                            <li>Companion</li>
+                            <li>Wondered</li>
+                            <li>Modesty</li>
+                            <li>Queen</li>
+                            <li>Satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Recent Post</h5>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/items/item15.png" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-7 item-text-style">
+                                <p>Looking cautiously round,to ascertain that they</p>
+                                <p>September 28,2016</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/items/item14.png" alt="">
+                            </div>
+                            <div class="col-md-12 col-lg-7 item-text-style">
+                                <p>Revolutions of government has would make his</p>
+                                <p>September 24,2016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Feedback</h5>
+                        <input class="feedback form-control form-style" type="email" placeholder="email"></input>
+                        <textarea class="feedback form-control form-style" name="" id="" cols="23" rows="5"
+                            placeholder="message"></textarea>
+                        <button type="button" class="feedback btn btn-secondary">Submit form</button>
+                    </div>
+                </div>
+                <div class="container row low">
+                    <img src="./images/icons/whitetwitter.png" alt="">
+                    <img src="./images/icons/whitegoogle.png" alt="">
+                    <img src="./images/icons/whitefacebook.png" alt="">
+                    <img src="./images/icons/whitelinkedin.png" alt="">
+                    <img src="./images/icons/whiteyoutube.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class='copyright'>
+            <div class="container d-flex">
+                <p>&copy; 2016 - Lenox Multi-Concept Template</p>
+                <p class='ml-auto'>Created by
+                    <img src="./images/icons/icon.png" alt="">
+                    Tareq</p>
+            </div>
+
+        </section>
+    </footer>
+    <script src='./js/custom/store.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

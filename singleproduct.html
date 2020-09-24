@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenox</title>
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom/singleproduct.css">
+</head>
+
+<body>
+    <header>
+        <!-- icon and social link -->
+        <div class="container head icon-style d-flex ">
+            <div class="d-flex">
+                <img src="./images/icons/icon.png" alt="">
+                <h3>lenox <sub>store</sub> </h3>
+            </div>
+            <div class="d-flex ml-auto">
+                <a class="social" href="#twitter">
+                    <img src="./images/icons/blacktwitter.png" alt="">
+                </a>
+                <a class="social" href="#google">
+                    <img src="./images/icons/blackgoogle.png" alt="">
+                </a>
+                <a class="social" href="#facebook">
+                    <img src="./images/icons/blackfacebook.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark icon-style">
+            <div class="container">
+                <a class="navbar-brand" href="#search">
+                    <img src="./images/icons/search.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#campaign">Campaign</a>
+                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link active" href="store.html">Store</a>
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#favourite">
+                            <img src="./images/icons/favourite.png" alt="">
+                        </a>
+                        <a class="nav-link cart-view cart-items-number">
+                            <img id="cart-button" src="./images/icons/cart.png" alt="">
+                            <div class="show-number">
+                                <span id="cart-size-number">2</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcrumb -->
+        <div class="container head">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li class="breadcrumb-item "><a href="/store.html">Store</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Single Product</li>
+                </ol>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <hr>
+                    </div>
+                </div>
+            </nav>
+            <div id="see-cart" class="cart-all ml-auto">
+                <div id="see-first-cart" class='mini-cart align-items-center '>
+                    <img src="./images/items/item1.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>DESIGN AND TYPOGRAPHY BY G. WILLIAMS,BOOK</p>
+                        <p>Price : $<span id="cart-first-price">40.99</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='firstB' class='btn btn-danger  ml-auto'>X</button>
+                </div>
+                <div id="see-second-cart" class='mini-cart align-items-center'>
+                    <img src="./images/items/item2.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>BIG ENVELOP MOCKUP PDF AND PSD PACK</p>
+                        <p>Price : $<span id="cart-second-price">150</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='secondB' class='btn btn-danger ml-auto'>X</button>
+                </div>
+                <h4 id='nothing'>No items in your cart</h4>
+                <button class="btn btn-info" id='hide-cart'>Hide Cart</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- title -->
+        <section class='container title'>
+            <h1>Single Product</h1>
+        </section>
+        <!-- product show -->
+        <section>
+            <div class="container show-product">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="bImg">
+                                    <img src="./images/items/item8.jpg" alt="">
+                                <p class="zoom"><img src="./images/icons/wzoom.png" alt=""></p>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 Simg">
+                                <img src="./images/items/item8_3.jpg" alt="">
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 Simg">
+                                <img src="./images/items/item8_2.jpg" alt="">
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 Simg">
+                                <img src="./images/items/item8_1.jpg" alt="">
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 Simg">
+                                <img src="./images/items/item8_4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <h5>NICE BOTTLE WITH METAL COVER</h5>
+                        <div class="d-flex justify-content-between">
+                            <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+                            <p>(2 customer reviews)</p>
+                        </div>
+                        <h5>$20</h5>
+                        <small>
+                            High Quality Electroplated Metal Water Bottle Four Color Vacuum Double Wall Stainless Steel
+                            Water Bottle ECO Friendly BPA Free
+                        </small>
+                        <hr class="single">
+                        <p>Color :</p>
+                        <div class="color">
+                            <button class='c1'></button>
+                            <button class='c2'></button>
+                            <button class='c3'></button>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p>Size :</p>
+                            <a class="anchor" href="">View size guide</a>
+                        </div>
+                        <div class="size">
+                            <button class='b1'>S</button>
+                            <button class='b2'>M</button>
+                            <button class='b3'>L</button>
+                        </div>
+                        <p>Quantity :</p>
+                        <select class="quantity" name="" id="">
+                            <option value="1">1</option>
+                        </select>
+                        <div class="row add">
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <button type="button" class="btn btn-color"><img src="./images/icons/cart1.png" alt="">
+                                    Add to Cart</button>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <button type="button" class="btn d-flex align-items-center">
+                                    <img src="./images/icons/bfavourite.png" alt="">
+                                    Add to Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="single">
+                        <div class="info">
+                            <p>Sku: <span>123456789</span></p>
+                            <p>Category : <span>Gifts</span></p>
+                            <p>Tags : <span>Tunks,Blog,Print,Book,Gift</span></p>
+                        </div>
+                        <p class="share">Share :
+                            <img src="./images/icons/bfacebook.png" />
+                            <img src="./images/icons/byoutube.png" />
+                            <img src="./images/icons/bgoogle.png" />
+                            <img src="./images/icons/btwitter.png" />
+                        </p>
+                    </div>
+                </div>
+                <div class="row people-review">
+                    <div class="col-md-12 review-button">
+                        <button type="button" class="">Information</button>
+                        <button type="button" class="">Reviews(2)</button>
+                        <hr class="rev-hr">
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2">
+                        <img src="./images/peoples/people1.jpeg" alt="">
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-10 text-review">
+                        <div class="d-flex justify-content-between">
+                            <h6>Fatil Khan</h6>
+                            <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+                        </div>
+                        <p class="date">july 26,2016 | 2.00 pm <img src="./images/icons/bforward.png" alt=""> </p>
+                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem debitis temporibus
+                            ipsam
+                            architecto sint quae, iure nulla recusandae exercitationem eveniet.</small>
+                    </div>
+
+                    <div class="col-3 col-sm-3 col-md-2">
+                        <img src="./images/peoples/people2.jpg" alt="">
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-10 text-review">
+                        <div class="d-flex justify-content-between">
+                            <h6>Fatil Khan</h6>
+                            <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+                        </div>
+                        <p class="date">july 26,2016 | 2.00 pm <img src="./images/icons/bforward.png" alt=""> </p>
+                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem debitis temporibus
+                            ipsam
+                            architecto sint quae, iure nulla recusandae exercitationem eveniet.</small>
+                    </div>
+                </div>
+                <div class="row review">
+                    <div class="col-md-12">
+                        <h5>Leave your review:</h5>
+                        <small>Rate Product</small>
+                        <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 bg">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 bgg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="col-md-12 bgg">
+                        <textarea placeholder="Message" name="" id="" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-12 bg">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="portfolio">
+            <div class="container">
+                <h5>Related Products</h5>
+                <div class="row related">
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <img src="./images/items/item8.jpg" alt="">
+                        <div class="text-center">
+                            <p>Steel thermos flask with leather holder</p>
+                            <p>$60</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <img src="./images/items/item9.jpg" alt="">
+                        <div class="text-center">
+                            <p>Mini Camera Durable casing</p>
+                            <p>$80.50</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <img src="./images/items/item13.jpg" alt="">
+                        <div class="text-center">
+                            <p>Designer sketch paper 100 in pack</p>
+                            <p>$70</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <img src="./images/items/item11.jpg" alt="">
+                        <div class="text-center">
+                            <p>Gigantic Donut Pool Float</p>
+                            <p>$70.60</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lower">
+            <div class="container">
+                <div class="row content">
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Get in touch</h5>
+                        <p>King Street,Melbourne</p>
+                        <p>Victoria 3000 Australia</p>
+                        <h6>8 8005958212</h6>
+                        <p>mail@gmail.com</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Useful Link</h5>
+                        <ul class="list">
+                            <li>Alice</li>
+                            <li>Wondered</li>
+                            <li>Companion</li>
+                            <li>Wondered</li>
+                            <li>Modesty</li>
+                            <li>Queen</li>
+                            <li>Satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Recent Post</h5>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/items/item15.png" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-7 item-text-style">
+                                <p>Looking cautiously round,to ascertain that they</p>
+                                <p>September 28,2016</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/items/item14.png" alt="">
+                            </div>
+                            <div class="col-md-12 col-lg-7 item-text-style">
+                                <p>Revolutions of government has would make his</p>
+                                <p>September 24,2016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Feedback</h5>
+                        <input class="feedback form-control form-style" type="email" placeholder="email"></input>
+                        <textarea class="feedback form-control form-style" name="" id="" cols="23" rows="5"
+                            placeholder="message"></textarea>
+                        <button type="button" class="feedback btn btn-secondary">Submit form</button>
+                    </div>
+                </div>
+                <div class="container row low">
+                    <img src="./images/icons/whitetwitter.png" alt="">
+                    <img src="./images/icons/whitegoogle.png" alt="">
+                    <img src="./images/icons/whitefacebook.png" alt="">
+                    <img src="./images/icons/whitelinkedin.png" alt="">
+                    <img src="./images/icons/whiteyoutube.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class='copyright'>
+            <div class="container d-flex">
+                <p>&copy; 2016 - Lenox Multi-Concept Template</p>
+                <p class='ml-auto'>Created by
+                    <img src="./images/icons/icon.png" alt="">
+                    Tareq</p>
+            </div>
+
+        </section>
+    </footer>
+    <script src='./js/custom/singleproduct.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

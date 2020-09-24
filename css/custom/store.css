@@ -193,6 +193,12 @@ display:flex;
     width: 100%;
     height: 100%;
 }
+.cross{
+    border-radius: 3px;
+    background-color:white;
+    border: none;
+    outline:none !important;
+}
 .anchor-style a{
     text-decoration:none;
     color:white;
@@ -302,112 +308,3 @@ height: 100px;
     width:15px;
 }
 
-/* shopping cart */
-.cart-head-title{
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding:4px;
-    background-color:rgba(128, 128, 128, 0.296);
-}
-.cart-item-style{
-    text-align:center;
-}
-.cart-item-style img{
-    width: 70px;
-    height:100px;
-    margin-left:15px;
-}
-.cart-item-style p{
-   font-size:12px;
-}
-.form{
-    text-align: center;
-    width: 28px;
-    border:none;
-    background-color:rgba(210, 210, 210, 0);
-}
-.quantity{
-    background-color:rgba(146, 144, 144, 0.207);
-    border-radius: 5px;
-}
-.btn-cart{
-    border:none;
-    border-radius: 5px;
-}
-.style-button{
-border:none;
-}
-.first-items{
-    margin-bottom:20px;
-}
-.second-items{
-    margin-bottom: 20px;
-}
-.back-home{
-    margin-bottom: 20px;
-}
-.back-home a{
-    text-decoration:none;
-    color:white;
-    outline:none;
-}
-/* coupon */
-.cart-cart-style{
-    background-color:rgba(128, 128, 128, 0.296);
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding:4px;
-    margin-left: 15px;
-}
-.coupon input{
-    border:none;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding:4px;
-    width: 100%;
-    background-color:rgba(123, 112, 112, 0.522);
-}
-/* shipping */
-.shipping input{
-    border:none;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding:4px;
-    width: 100%;
-    background-color:rgba(123, 112, 112, 0.522);
-}
-/* checkout */
-.checkout-cart-style{
-    background-color:rgba(123, 112, 112, 0.522);
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding:4px;
-}
-.proceed-cart-style{
-    color: white;
-    background-color:rgb(0, 0, 0);
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding:4px;
-    cursor: pointer;
-}
-.cross{
-    border-radius: 3px;
-    background-color:white;
-    border: none;
-    outline:none !important;
-}
-.btnMProduct{
-    outline:none!important;
-    background-color:rgba(210, 210, 210, 0);
-    border-radius: 2px;
-    border: none;
-    margin-left:5px;
-}
-.btnPProduct{
-    outline:none!important;
-    background-color:rgba(210, 210, 210, 0);
-    border-radius: 2px;
-    border: none;
-    margin-left: 5px;
-}
