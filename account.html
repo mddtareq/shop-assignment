@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenox</title>
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom/account.css">
+</head>
+
+<body>
+    <header>
+        <!-- icon and social link -->
+        <div class="container head icon-style d-flex ">
+            <div class="d-flex">
+                <img src="./images/icons/icon.png" alt="">
+                <h3>lenox <sub>store</sub> </h3>
+            </div>
+            <div class="d-flex ml-auto">
+                <a class="social" href="#twitter">
+                    <img src="./images/icons/blacktwitter.png" alt="">
+                </a>
+                <a class="social" href="#google">
+                    <img src="./images/icons/blackgoogle.png" alt="">
+                </a>
+                <a class="social" href="#facebook">
+                    <img src="./images/icons/blackfacebook.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark icon-style">
+            <div class="container">
+                <a class="navbar-brand" href="#search">
+                    <img src="./images/icons/search.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#campaign">Campaign</a>
+                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link active" href="store.html">Store</a>
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#favourite">
+                            <img src="./images/icons/favourite.png" alt="">
+                        </a>
+                        <a class="nav-link cart-view cart-items-number">
+                            <img id="cart-button" src="./images/icons/cart.png" alt="">
+                            <div class="show-number">
+                                <span id="cart-size-number">2</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcrumb -->
+        <div class="container head">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li class="breadcrumb-item "><a href="store.html">Store</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">account</li>
+                </ol>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <hr>
+                    </div>
+                </div>
+            </nav>
+            <div id="see-cart" class="cart-all ml-auto">
+                <div id="see-first-cart" class='mini-cart align-items-center '>
+                    <img src="./images/items/item1.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>DESIGN AND TYPOGRAPHY BY G. WILLIAMS,BOOK</p>
+                        <p>Price : $<span id="cart-first-price">40.99</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='firstB' class='btn btn-danger  ml-auto'>X</button>
+                </div>
+                <div id="see-second-cart" class='mini-cart align-items-center'>
+                    <img src="./images/items/item2.jpg" alt="">
+                    <div class="mini-cart-details">
+                        <p>BIG ENVELOP MOCKUP PDF AND PSD PACK</p>
+                        <p>Price : $<span id="cart-second-price">150</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='secondB' class='btn btn-danger ml-auto'>X</button>
+                </div>
+                <h4 id='nothing'>No items in your cart</h4>
+                <button class="btn btn-info" id='hide-cart'>Hide Cart</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- title -->
+        <section class='container title'>
+            <h1>My Account</h1>
+        </section>
+        <!-- account -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="option">
+                            <a href="">Account Information</a>
+                            <a href="">My orders</a>
+                            <a href="">Wishlist</a>
+                            <a href="">Billing address</a>
+                            <a href="">Change Account Details</a>
+                            <a href="">Logout <img src="./images/icons/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="info">
+                            <h5>Hello! Milana Frankone</h5>
+                            <p>47 Rock Maple Street</p>
+                            <p>Annapolis, MD 21401</p>
+                            <br>
+                            <button type="button" class="btn btn-color">Change</button>
+                        </div>
+                        <hr>
+                        <div class="address">
+                            <p>Enter a new address</p>
+                            <form action="">
+                            <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Country">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Address ( Street, U&nit, apartment)" placeholder="">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="City">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Postcode/Zip">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="password" placeholder="password">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="submit" class="btn btn-color" value="Save Changes">
+                                    </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="lower">
+            <div class="container">
+                <div class="row content">
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Get in touch</h5>
+                        <p>King Street,Melbourne</p>
+                        <p>Victoria 3000 Australia</p>
+                        <h6>8 8005958212</h6>
+                        <p>mail@gmail.com</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Useful Link</h5>
+                        <ul class="list">
+                            <li>Alice</li>
+                            <li>Wondered</li>
+                            <li>Companion</li>
+                            <li>Wondered</li>
+                            <li>Modesty</li>
+                            <li>Queen</li>
+                            <li>Satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Recent Post</h5>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/items/item15.png" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-7 item-text-style">
+                                <p>Looking cautiously round,to ascertain that they</p>
+                                <p>September 28,2016</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row footer-items">
+                            <div class="col-md-12 col-lg-5">
+                                <img src="./images/items/item14.png" alt="">
+                            </div>
+                            <div class="col-md-12 col-lg-7 item-text-style">
+                                <p>Revolutions of government has would make his</p>
+                                <p>September 24,2016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Feedback</h5>
+                        <input class="feedback form-control form-style" type="email" placeholder="email"></input>
+                        <textarea class="feedback form-control form-style" name="" id="" cols="23" rows="5"
+                            placeholder="message"></textarea>
+                        <button type="button" class="feedback btn btn-secondary">Submit form</button>
+                    </div>
+                </div>
+                <div class="container row low">
+                    <img src="./images/icons/whitetwitter.png" alt="">
+                    <img src="./images/icons/whitegoogle.png" alt="">
+                    <img src="./images/icons/whitefacebook.png" alt="">
+                    <img src="./images/icons/whitelinkedin.png" alt="">
+                    <img src="./images/icons/whiteyoutube.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class='copyright'>
+            <div class="container d-flex">
+                <p>&copy; 2016 - Lenox Multi-Concept Template</p>
+                <p class='ml-auto'>Created by
+                    <img src="./images/icons/icon.png" alt="">
+                    Tareq</p>
+            </div>
+
+        </section>
+    </footer>
+    <script src='./js/custom/account.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
