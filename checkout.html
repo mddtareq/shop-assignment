@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenox</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/custom/singleproduct.css">
+    <link rel="stylesheet" href="./css/custom/checkout.css">
 </head>
 
 <body>
@@ -66,7 +66,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style">
                     <li class="breadcrumb-item "><a href="store.html">Store</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Single Product</li>
+                    <li class="breadcrumb-item active" aria-current="page">check out</li>
                 </ol>
                 <div class="row">
                     <div class="col-4 col-sm-4 col-md-3 col-lg-2">
@@ -101,186 +101,155 @@
     <main>
         <!-- title -->
         <section class='container title'>
-            <h1>Single Product</h1>
+            <h1>Checkout</h1>
         </section>
-        <!-- product show -->
-        <section>
-            <div class="container show-product">
+        <!-- return login -->
+        <div class="container">
+            <div class="return">
+                <h6>Returning customer? <a href="">Click to Login</a> </h6>
+            </div>
+            <br>
+            <div class="fill-up">
+                <p>If you make a purchase in our store or have already registered,
+                    please fill in the fields below. In other cases -go to the delivery and payment section.</p>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 input-small">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="col-md-6 input-small">
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-between">
+                        <input type="submit" value="Sign In" class="btn btn-color">
+                        <p>Remember me <a href="">Forgot your password or login?</a> </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="return">
+                <h6>Return policy and delivery terms</h6>
+            </div>
+            <br>
+            <div class="billing">
+                <div class="row">
+                    <div class="col-md-6">
+                    <form>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="bImg">
-                                    <img src="./images/items/item8.jpg" alt="">
-                                <p class="zoom"><img src="./images/icons/wzoom.png" alt=""></p>
+                                <p>Billing Details</p>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 input-small">
+                                <input type="text" placeholder="First Name" >
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 input-small">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 input-small">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 input-small">
+                                <input type="text" placeholder="Phone Number">
+                            </div>
+                            <div class="col-md-12 input-small">
+                                <input type="text" placeholder="Country">
+                            </div>
+                            <div class="col-md-12 input-small">
+                                <input type="text" placeholder="Address ( Street, U&nit, apartment)" placeholder="">
+                            </div>
+                            <div class="col-md-12 input-small">
+                                <input type="text" placeholder="City">
+                            </div>
+                            <div class="col-md-12 input-small">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-6">
+                                        <input type="text" placeholder="Postcode/Zip">
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6">
+                                        <a href="">Create an account</a> 
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-3 col-sm-3 col-md-3 Simg">
-                                <img src="./images/items/item8_3.jpg" alt="">
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 Simg">
-                                <img src="./images/items/item8_2.jpg" alt="">
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 Simg">
-                                <img src="./images/items/item8_1.jpg" alt="">
-                            </div>
-                            <div class="col-3 col-sm-3 col-md-3 Simg">
-                                <img src="./images/items/item8_4.jpg" alt="">
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <h5>NICE BOTTLE WITH METAL COVER</h5>
-                        <div class="d-flex justify-content-between">
-                            <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
-                            <p>(2 customer reviews)</p>
-                        </div>
-                        <h5>$20</h5>
-                        <small>
-                            High Quality Electroplated Metal Water Bottle Four Color Vacuum Double Wall Stainless Steel
-                            Water Bottle ECO Friendly BPA Free
-                        </small>
-                        <hr class="single">
-                        <p>Color :</p>
-                        <div class="color">
-                            <button class='c1'></button>
-                            <button class='c2'></button>
-                            <button class='c3'></button>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <p>Size :</p>
-                            <a class="anchor" href="">View size guide</a>
-                        </div>
-                        <div class="size">
-                            <button class='b1'>S</button>
-                            <button class='b2'>M</button>
-                            <button class='b3'>L</button>
-                        </div>
-                        <p>Quantity :</p>
-                        <select class="quantity" name="" id="">
-                            <option value="1">1</option>
-                        </select>
-                        <div class="row add">
-                            <div class="col-6 col-sm-6 col-md-6">
-                                <button type="button" class="btn btn-color"><img src="./images/icons/cart1.png" alt="">
-                                    Add to Cart</button>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-6">
-                                <button type="button" class="btn d-flex align-items-center">
-                                    <img src="./images/icons/bfavourite.png" alt="">
-                                    Add to Wishlist
-                                </button>
-                            </div>
-                        </div>
-                        <hr class="single">
-                        <div class="info">
-                            <p>Sku: <span>123456789</span></p>
-                            <p>Category : <span>Gifts</span></p>
-                            <p>Tags : <span>Tunks,Blog,Print,Book,Gift</span></p>
-                        </div>
-                        <p class="share">Share :
-                            <img src="./images/icons/bfacebook.png" />
-                            <img src="./images/icons/byoutube.png" />
-                            <img src="./images/icons/bgoogle.png" />
-                            <img src="./images/icons/btwitter.png" />
-                        </p>
-                    </div>
-                </div>
-                <div class="row people-review">
-                    <div class="col-md-12 review-button">
-                        <button type="button" class="">Information</button>
-                        <button type="button" class="">Reviews(2)</button>
-                        <hr class="rev-hr">
-                    </div>
-                    <div class="col-3 col-sm-3 col-md-2">
-                        <img src="./images/peoples/people1.jpeg" alt="">
-                    </div>
-                    <div class="col-9 col-sm-9 col-md-10 text-review">
-                        <div class="d-flex justify-content-between">
-                            <h6>Fatil Khan</h6>
-                            <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
-                        </div>
-                        <p class="date">july 26,2016 | 2.00 pm <img src="./images/icons/bforward.png" alt=""> </p>
-                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem debitis temporibus
-                            ipsam
-                            architecto sint quae, iure nulla recusandae exercitationem eveniet.</small>
-                    </div>
-
-                    <div class="col-3 col-sm-3 col-md-2">
-                        <img src="./images/peoples/people2.jpg" alt="">
-                    </div>
-                    <div class="col-9 col-sm-9 col-md-10 text-review">
-                        <div class="d-flex justify-content-between">
-                            <h6>Fatil Khan</h6>
-                            <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
-                        </div>
-                        <p class="date">july 26,2016 | 2.00 pm <img src="./images/icons/bforward.png" alt=""> </p>
-                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem debitis temporibus
-                            ipsam
-                            architecto sint quae, iure nulla recusandae exercitationem eveniet.</small>
-                    </div>
-                </div>
-                <div class="row review">
-                    <div class="col-md-12">
-                        <h5>Leave your review:</h5>
-                        <small>Rate Product</small>
-                        <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-6 bg">
-                    <form action="">
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-6 bgg">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="col-md-12 bgg">
-                        <textarea placeholder="Message" name="" id="" rows="3"></textarea>
-                    </div>
-                    <div class="col-md-12 bg">
-                        <input type="submit" value="Send">
-                    </div>
                     </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="addition">
+                            <p>Additional information</p>
+                            <small>Notes on your order, such as special
+                                remarks about the delivery etc.
+                            </small>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
+            <br>
+            <div class="check">
+                <h5>Check your order</h5>
+                <hr>
+                <div class="row">
+                    <div class="col-6 col-sm-8 col-md-8 text">
+                        Design and typography by G. williams, book
+                    </div>
+                    <div class="col-3 col-sm-2 col-md-2 bold-half">1x$40.99</div>
+                    <div class="col-3 col-sm-2 col-md-2 bold-half">$40.99</div>
+                    <div class="col-6 col-sm-8 col-md-8 text">
+                        lifestyle magazine kinfolk
+                    </div>
+                    <div class="col-3 col-sm-2 col-md-2 bold-half">$80.99</div>
+                    <div class="col-3 col-sm-2 col-md-2 bold-half">$80.99</div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6 col-sm-8 col-md-8"></div>
+                    <div class="col-3 col-sm-2 col-md-2 text-half">Subtotal</div>
+                    <div class="col-3 col-sm-2 col-md-2 bold-half">$121.98</div>
+                    <div class="col-6 col-sm-8 col-md-8"></div>
+                    <div class="col-3 col-sm-2 col-md-2 text-half">Delivery</div>
+                    <div class="col-3 col-sm-2 col-md-2 bold-half">$5</div>
+                    <div class="col-6 col-sm-8 col-md-8"></div>
+                    <div class="col-6 col-sm-4 col-md-4"><hr></div>
+                    <div class="col-6 col-sm-8 col-md-8"></div>
+                    <div class="col-3 col-sm-2 col-md-2 bold">To pay</div>
+                    <div class="col-3 col-sm-2 col-md-2 bold">$126.98</div>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="pay">
+                <div class="row">
+                    <div class="col-1 col-sm-1 col-md-1">
+                        <input type="radio" name="1">
+                    </div>
+                    <div class="col-11 col-sm-11 col-md-11">
+                        <p>Pay by phone</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1 col-md-1">
+                        <input type="radio" name="1" checked>
+                    </div>
+                    <div class="col-11 col-sm-11 col-md-11">
+                        <p>PayPal</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 col-sm-1 col-md-1">   
+                    </div>
+                    <div class="col-11 col-sm-11 col-md-11 d-flex justify-content-start align-items-center payPal">
+                        <img src="./images/icons/paypal.webp" alt="">
+                        <a href="">What is PayPal?</a>
+                    </div>
+                    <div class="col-1 col-sm-1 col-md-1"></div>
+                    <div class="col-11 col-sm-11 col-md-11">
+                        <small>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</small>
+                    </div>
+                </div>  
+                <br>         
+                <button type="button" class="btn btn-color">Proceed to PayPal</button>
+            </div>
+        </div>
     </main>
     <footer class="footer">
-        <section class="portfolio">
-            <div class="container">
-                <h5>Related Products</h5>
-                <div class="row related">
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <img src="./images/items/item8.jpg" alt="">
-                        <div class="text-center">
-                            <p>Steel thermos flask with leather holder</p>
-                            <p>$60</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <img src="./images/items/item9.jpg" alt="">
-                        <div class="text-center">
-                            <p>Mini Camera Durable casing</p>
-                            <p>$80.50</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <img src="./images/items/item13.jpg" alt="">
-                        <div class="text-center">
-                            <p>Designer sketch paper 100 in pack</p>
-                            <p>$70</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <img src="./images/items/item11.jpg" alt="">
-                        <div class="text-center">
-                            <p>Gigantic Donut Pool Float</p>
-                            <p>$70.60</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="lower">
             <div class="container">
                 <div class="row content">
@@ -352,7 +321,7 @@
 
         </section>
     </footer>
-    <script src='./js/custom/singleproduct.js'></script>
+    <script src='./js/custom/checkout.js'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
