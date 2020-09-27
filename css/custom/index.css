@@ -263,10 +263,10 @@ display:flex;
  font-size:8px!important;
 }
 .cart-all{
+    display:none;
     margin-top: -50px;
     width:300px;
     padding:10px;
-    display:none;
     background-color:rgba(62, 40, 40, 0.639);
 }
 .cart-all p{
@@ -282,5 +282,21 @@ display:flex;
 }
 .head{
     position: relative;
-   
+}
+.cart-all a{
+    margin-left:70%;;
+}
+.btn-cart{
+    border: none;
+    color: rgba(255, 255, 255, 0.734);
+    border-radius: 1px;
+    background-color:rgba(49, 220, 98, 0.686);
+    outline: none!important;
+}
+.btn-remove{
+    outline: none!important;
+    border: none;
+    color: rgba(255, 255, 255, 0.666);
+    border-radius: 1px;
+    background-color:rgb(235, 12, 12);
 }
