@@ -120,13 +120,24 @@ display:flex;
 }
 /* items style */
 .convert{
+    text-align: center;
     margin-bottom:5px;
     border-radius: 3px;
     padding:5px;
     border: 1px solid rgba(0, 0, 0, 0.207);
 }
-.convert a{
-    color: rgba(0, 0, 0, 0.659);
+.convert #desc{
+    display: none;
+}
+.convert #asc{
+    display: block;
+}
+.convert button{
+    background-color:rgba(255, 0, 0, 0);
+    border: none;
+    outline: none;
+    margin: auto;
+    
 }
 .items select{
     margin-bottom: 5px;
