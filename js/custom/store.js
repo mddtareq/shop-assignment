@@ -120,3 +120,19 @@ $('#desc').click(function () {
         return $(a).find(".card-text").text() < $(b).find(".card-text").text() ? 1 : -1;
     }).appendTo(".card-sort");
 })
+function selectOption(event){
+    const option = document.getElementById("select").value;
+    if(option==='Price low to high'){
+        $('.card-sort .items').sort(function (a, b) {
+            return $(a).find(".price-style").text() > $(b).find(".price-style").text() ? 1 : -1;
+        }).appendTo(".card-sort");
+    }
+    else if(option==='Price high to low'){
+        $('.card-sort .items').sort(function (a, b) {
+            return $(a).find(".price-style").text() < $(b).find(".price-style").text() ? 1 : -1;
+        }).appendTo(".card-sort");
+    }
+    else{
+        location.reload();
+    }
+}
