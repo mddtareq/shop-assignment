@@ -148,7 +148,7 @@ border:none;
     color:white;
 }
 .list li{
-    margin-left:0px;
+    margin-left:-20px;
     font-size:12px;
 }
 .content h5{

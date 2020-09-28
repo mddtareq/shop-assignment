@@ -200,7 +200,7 @@
     color:white;
 }
 .list li{
-    margin-left:0px;
+    margin-left:-20px;
     font-size:12px;
 }
 .content h5{
@@ -285,6 +285,9 @@ display:flex;
 }
 .cart-all a{
     margin-left:70%;;
+}
+.cart-all h6{
+    text-align: center;
 }
 .btn-cart{
     border: none;

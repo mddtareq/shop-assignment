@@ -94,7 +94,7 @@
                     <button id='secondB' class='btn-remove ml-auto'>X</button>
                 </div>
                 <h6 id='nothing'>No items in your cart</h6>
-                <a href="cart.html"><button class="btn-cart" href="cart.html">Show Cart</button></a>
+                <a id="show-cart-btn" href="cart.html"><button class="btn-cart" href="cart.html">Show Cart</button></a>
             </div>
         </div>
     </header>
@@ -109,20 +109,24 @@
             <div class="row">
                 <div class="col-12 col-sm-8 col-md-7 col-lg-8">
                     <div class="row items">
-                        <div class="col-11 col-sm-6 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <select class="form-control">
                                 <option>Default sorting</option>
                             </select>
                         </div>
-                        <div class="col-1 col-sm-1 col-md-4 col-lg-4"></div>
-                        <div class="col-12 col-sm-5 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="convert">
+                                <a href="">Ascending</a> | <a href="">Descending</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <p class='text-color'>Showing 1-9 from 18 results</p>
                         </div>
                     </div>
                     <!-- items -->
                     <div class="row">
                         <!-- <div class="col-1 col-sm-1"></div> -->
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -138,7 +142,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -154,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <div class="sale">
                                     <img src="./images/items/item5.jpg" class="card-img-top" alt="...">
@@ -174,7 +179,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <div class="new-in">
                                     <img src="./images/items/item6.jpg" class="card-img-top" alt="...">
@@ -193,7 +198,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item7.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -209,7 +214,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item8.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -225,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item9.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -241,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item10.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -257,7 +262,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" items col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item11.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -297,10 +302,10 @@
                         <hr>
                         <!-- cart items -->
                         <div id="first-items" class="row cart-items">
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-5">
+                            <div class="col-6 col-sm-12 col-md-4 col-lg-5">
                                 <img src="./images/items/item1.jpg" alt="">
                             </div>
-                            <div class="col-6 col-sm-6 col-md-8 col-lg-7 item-text-style">
+                            <div class="col-6 col-sm-12 col-md-8 col-lg-7 item-text-style">
                                 <p>DESIGN AND TYPOGRAPHY BY G. WILLIAMS, BOOK</p>
                                 <p>1 x $ <span id='first-price'>40.99</span> </p>
                                 <button class="cross" id='first'><span class="bold">X</span> REMOVE</button>
@@ -308,10 +313,10 @@
                         </div>
                         <hr>
                         <div id="second-items" class="row cart-items">
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-5">
+                            <div class="col-6 col-sm-12 col-md-4 col-lg-5">
                                 <img src="./images/items/item2.jpg" alt="">
                             </div>
-                            <div class="col-6 col-sm-6 col-md-8 col-lg-7 item-text-style">
+                            <div class="col-6 col-sm-12 col-md-8 col-lg-7 item-text-style">
                                 <p>BIG ENVELOP MOCKUP PDF AND PSD PACK</p>
                                 <p>1 x $ <span id='second-price'>150</span> </p>
                                 <button class="cross" id='second'><span class="bold">X</span> REMOVE</button>
@@ -431,10 +436,10 @@
                         <h5>Get in touch</h5>
                         <p>King Street,Melbourne</p>
                         <p>Victoria 3000 Australia</p>
-                        <h6>8 8005958212</h6>
+                        <h6>8005958212</h6>
                         <p>mail@gmail.com</p>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
                         <h5>Useful Link</h5>
                         <ul class="list">
                             <li>Alice</li>
@@ -446,11 +451,11 @@
                             <li>Satisfaction</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4">
                         <h5>Recent Post</h5>
                         <div class="row footer-items">
                             <div class="col-md-12 col-lg-5">
-                                <img src="./images/items/item15.png" alt="">
+                                <img src="./images/items/item14.png" alt="">
                             </div>
                             <div class="col-md-8 col-lg-7 item-text-style">
                                 <p>Looking cautiously round,to ascertain that they</p>
@@ -460,7 +465,7 @@
                         <hr>
                         <div class="row footer-items">
                             <div class="col-md-12 col-lg-5">
-                                <img src="./images/items/item14.png" alt="">
+                                <img src="./images/items/item15.png" alt="">
                             </div>
                             <div class="col-md-12 col-lg-7 item-text-style">
                                 <p>Revolutions of government has would make his</p>
@@ -468,7 +473,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                         <h5>Feedback</h5>
                         <input class="feedback form-control form-style" type="email" placeholder="email"></input>
                         <textarea class="feedback form-control form-style" name="" id="" cols="23" rows="5"
