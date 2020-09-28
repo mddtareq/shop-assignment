@@ -62,11 +62,16 @@ document.body.addEventListener('click', function (event) {
     const secondInfo= document.getElementById('mini-info-2');
     const firstInfo = document.getElementById('mini-info-1');
     if(event.target===cart){
-        cartDisplay.style.display = 'block';
+        if(cartDisplay.style.display ==='none'){
+            cartDisplay.style.display = 'block';
+        }
+        else{
+            cartDisplay.style.display = 'none';
+        }
     }
     if(event.target!==cart){
         
-        if(event.target!==cartDisplay&&
+        if(event.target!==cartDisplay&&event.target.parentNode!==cartDisplay&&
             event.target!==firstC&&event.target!==secondC&&
             event.target.parentNode!==secondItemsC&&event.target.parentNode!==firstItemsC&&
             event.target.parentNode!==secondInfo&&event.target.parentNode!==firstInfo){
@@ -78,6 +83,7 @@ document.body.addEventListener('click', function (event) {
 function itemsF() {
     if (items<0) {
         document.getElementById("nothing").style.display='block';
+        document.getElementById("show-cart-btn").style.display = 'none';
     }
     itemNumber();
 }

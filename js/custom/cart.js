@@ -67,7 +67,6 @@ product2Minus.addEventListener('click', function () {
     }
 })
 
-
 function addQuantity(id, number, quantityNumber) {
     const updatedQuantity = quantityNumber + number;
     document.getElementById(id).value = updatedQuantity;
