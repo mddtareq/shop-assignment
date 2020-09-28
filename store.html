@@ -7,6 +7,7 @@
     <title>Lenox</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom/store.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,9 @@
                         <a class="nav-link cart-view cart-items-number">
                             <img id="cart-button" src="./images/icons/cart.png" alt="">
                             <div class="show-number">
-                                <span class="cart-size"><p id="cart-size-number">2</p></span>
+                                <span class="cart-size">
+                                    <p id="cart-size-number">2</p>
+                                </span>
                             </div>
                         </a>
                     </div>
@@ -109,14 +112,17 @@
             <div class="row">
                 <div class="col-12 col-sm-8 col-md-7 col-lg-8">
                     <div class="row items">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                             <select class="form-control">
                                 <option>Default sorting</option>
+                                <option>Sort by category</option>
                             </select>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="convert">
-                                <a href="">Ascending</a> | <a href="">Descending</a>
+                                <button id="asc">Ascending</button>
+                                <button id="desc">Descending</button>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
@@ -124,7 +130,7 @@
                         </div>
                     </div>
                     <!-- items -->
-                    <div class="row">
+                    <div class="row card-sort">
                         <!-- <div class="col-1 col-sm-1"></div> -->
                         <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
@@ -142,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class=" items col-6 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="./images/items/item4.jpg" class="card-img-top" alt="...">
@@ -218,7 +224,7 @@
                             <div class="card">
                                 <img src="./images/items/item8.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <p class="card-text card-text-style">NICE BOTTLE WITH METALL COVER</p>
+                                    <p class="card-text card-text-style">NICE BOTTLE WITH METAL COVER</p>
                                     <h4 class="price-style">$20</h4>
                                     <br>
                                     <div class="rate">
@@ -278,13 +284,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pagination col-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="d-flex ml-auto anchor">
-                                <a href="" active>1</a>
-                                <a href="">2</a>
-                                <a href="">3</a>
-                                <a href="">></a>
-                            </div>
+                    </div>
+                    <div class="pagination col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="d-flex ml-auto anchor">
+                            <a href="" active>1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">></a>
                         </div>
                     </div>
                 </div>
