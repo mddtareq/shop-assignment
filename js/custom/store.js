@@ -116,7 +116,6 @@ $('#asc').click(function () {
     }).appendTo(".card-sort");
 })
 $('#desc').click(function () {
-    console.log("25")
     $('.card-sort .items').sort(function (a, b) {
         return $(a).find(".card-text").text() < $(b).find(".card-text").text() ? 1 : -1;
     }).appendTo(".card-sort");
