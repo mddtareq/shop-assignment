@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenox</title>
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom/blog.css">
+</head>
+
+<body>
+    <header>
+        <!-- icon and social link -->
+        <div class="container head icon-style d-flex ">
+            <div class="d-flex">
+                <img src="./images/icons/icon.png" alt="">
+                <h3>lenox <sub>store</sub> </h3>
+            </div>
+            <div class="d-flex ml-auto social-head">
+                <a class="social" href="#twitter">
+                    <img src="./images/icons/blacktwitter.png" alt="">
+                </a>
+                <a class="social" href="#google">
+                    <img src="./images/icons/blackgoogle.png" alt="">
+                </a>
+                <a class="social" href="#facebook">
+                    <img src="./images/icons/blackfacebook.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark icon-style">
+            <div class="container">
+                <a class="navbar-brand" href="#search">
+                    <img src="./images/icons/search.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="campaign.html">Campaign</a>
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                        <a class="nav-link " href="store.html">Store</a>
+                        <a class="nav-link" href="contact.html">Contacts</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#favourite">
+                            <img src="./images/icons/favourite.png" alt="">
+                        </a>
+                        <a class="nav-link cart-view cart-items-number">
+                            <img id="cart-button" src="./images/icons/cart.png" alt="">
+                            <div class="show-number">
+                                <span class="cart-size">
+                                    <p id="cart-size-number">2</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcrumb -->
+        <div class="container head">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <hr>
+                    </div>
+                </div>
+            </nav>
+            <div id="see-cart" class="cart-all">
+                <div id="see-first-cart" class='mini-cart align-items-center '>
+                    <img src="./images/items/item1.jpg" alt="">
+                    <div id="mini-info-1" class="mini-cart-details">
+                        <p>DESIGN AND TYPOGRAPHY BY G. WILLIAMS,BOOK</p>
+                        <p>Price : $<span id="cart-first-price">40.99</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='firstB' class=' btn-remove  ml-auto'>X</button>
+                </div>
+                <div id="see-second-cart" class='mini-cart align-items-center'>
+                    <img src="./images/items/item2.jpg" alt="">
+                    <div id="mini-info-2" class="mini-cart-details">
+                        <p>BIG ENVELOP MOCKUP PDF AND PSD PACK</p>
+                        <p>Price : $<span id="cart-second-price">150</span></p>
+                        <p>Quantity : 1</p>
+                    </div>
+                    <button id='secondB' class='btn-remove ml-auto'>X</button>
+                </div>
+                <h6 id='nothing'>No items in your cart</h6>
+                <a id="show-cart-btn" href="cart.html"><button class="btn-cart" href="cart.html">Show Cart</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- title -->
+        <section class='container title'>
+            <h1>BLog mansonry right sidebar</h1>
+        </section>
+        <!-- blog -->
+        <section class='container'>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <div class="blog">
+                                <div class="card image-type1">
+                                    <img class="card-img-top" src="./images/items/carousel1.jpg" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>Colorful thing around us</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog">
+                                <div class="card image-type2">
+                                    <img class="card-img-top" src="./images/items/item15.png" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>Education rely on</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog">
+                                <div class="card image-type1">
+                                    <img class="card-img-top" src="./images/items/item14.png" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>Power of Book</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog">
+                                <div class="card image-type2">
+                                    <img class="card-img-top" src="./images/items/story1.jpeg" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>The Mysterious Book</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <div class="blog">
+                                <div class="card image-type2">
+                                    <img class="card-img-top" src="./images/items/item16.jpeg" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>Travel around the city on foot</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog">
+                                <div class="card image-type1">
+                                    <img class="card-img-top" src="./images/items/story2.jpg" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>New online things</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog">
+                                <div class="card image-type2">
+                                    <img class="card-img-top" src="./images/items/carousel5.jpg" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>The city stores</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog">
+                                <div class="card image-type1">
+                                    <img class="card-img-top" src="./images/items/carousel2.png" alt="Card image cap">
+                                    <div class="info">
+                                        <p class="card-title"><strong>Online shopping world</strong></p>
+                                        <small>jul 25,2016/In: Lifestyle/by john Doe</small>
+                                        <div class="line-gap"></div>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="line-gap"></div>
+                                        <a href="#" class="btn-read">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <button class="current">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>></button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-search">
+                        <img src="./images/icons/search.png" alt="">
+                    </div>
+                    <!-- category -->
+                    <div class="category">
+                        <div class='d-flex'>
+                            <p class="category-text-style"> <strong>All categories</strong></p>
+                            <p class="category-text-style ml-auto"> <strong>215</strong></p>
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Design</p>
+                            <p class="category-text-style ml-auto">65</p>
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Photo</p>
+                            <p class="category-text-style ml-auto">80</p>
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Branding</p>
+                            <p class="category-text-style ml-auto">15</p>
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Inspiration</p>
+                            <p class="category-text-style ml-auto">20</p>
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Web</p>
+                            <p class="category-text-style ml-auto">45</p>
+                        </div>
+                        <div class='d-flex'>
+                            <p class="category-text-style">Other</p>
+                            <p class="category-text-style ml-auto">15</p>
+                        </div>
+                    </div>
+                    <!-- tags -->
+                    <div class="Tags">
+                        <h3 class="cart-text-style">TAGS</h3>
+                        <hr>
+                        <div class="row">
+                            <tags class="tags-topic">Photo</tags>
+                            <tags class="tags-topic">Design</tags>
+                            <tags class="tags-topic">Development</tags>
+                            <tags class="tags-topic">BlogPost</tags>
+                            <tags class="tags-topic">PhotoWeb</tags>
+                        </div>
+                    </div>
+                    <!-- latests posts -->
+                    <div class="latest-post">
+                        <p class="cart-text-style">Latest Post:</p>
+
+                        <div class="row cart-items">
+                            <div class="col-6 col-sm-3 col-md-6 col-lg-5">
+                                <img src="./images/items/sidestory1.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-6 col-lg-7 item-text-style">
+                                <h6>The Exchange</h6>
+                                <p>September 28,2016</p>
+                            </div>
+                        <!-- </div> -->
+
+                        <!-- <div class="row cart-items"> -->
+                            <div class="col-6 col-sm-3 col-md-6 col-lg-5">
+                                <img src="./images/items/sidestory2.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-6 col-lg-7 item-text-style">
+                                <h6>At the Edge</h6>
+                                <p>September 24,2016</p>
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="row cart-items"> -->
+                            <div class="col-6 col-sm-3 col-md-6 col-lg-5">
+                                <img src="./images/items/sidestory3.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-6 col-lg-7 item-text-style">
+                                <h6>My skin</h6>
+                                <div class="d-flex align-items-end"></div>
+                                <p>September 24,2016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- archive -->
+                    <div class="archive">
+                        <h6>Archives</h6>
+                    <p>> October 2016</p>
+                    <p>> September 2016</p>
+                    <p>> August 2016</p>
+                    </div>
+                    <br>
+                    <div class="twitter">
+                        <h6>Latest from twitter :</h6>
+                        <div class="tweet-post">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img src="./images/icons/btwitter.png" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    Tareq @mddtareq
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="time">18 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="tweet-info">
+                                        <p>Lorem ipsum dolor sit amet.
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                        <a href="#">https://twitter.com/mddtareq</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5"></div>
+                            </div>
+                        </div>
+                        <div class="tweet-post">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <img src="./images/icons/btwitter.png" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        Tareq @mddtareq
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p class="time">18 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <div class="tweet-info">
+                                            <p>Lorem ipsum dolor sit amet.
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <a href="#">https://twitter.com/mddtareq</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class='footer'>
+            <section class="lower">
+                <div class="container">
+                    <div class="row content">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <h5>Get in touch</h5>
+                            <p>King Street,Melbourne</p>
+                            <p>Victoria 3000 Australia</p>
+                            <h6>8005958212</h6>
+                            <p>mail@gmail.com</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+                            <h5>Useful Link</h5>
+                            <ul class="list">
+                                <li>Alice</li>
+                                <li>Wondered</li>
+                                <li>Companion</li>
+                                <li>Wondered</li>
+                                <li>Modesty</li>
+                                <li>Queen</li>
+                                <li>Satisfaction</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+                            <h5>Recent Post</h5>
+                            <div class="row footer-items">
+                                <div class="col-md-12 col-lg-5">
+                                    <img src="./images/items/item14.png" alt="">
+                                </div>
+                                <div class="col-md-8 col-lg-7 item-text-style">
+                                    <p>Looking cautiously round,to ascertain that they</p>
+                                    <p>September 28,2016</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row footer-items">
+                                <div class="col-md-12 col-lg-5">
+                                    <img src="./images/items/item15.png" alt="">
+                                </div>
+                                <div class="col-md-12 col-lg-7 item-text-style">
+                                    <p>Revolutions of government has would make his</p>
+                                    <p>September 24,2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <h5>Feedback</h5>
+                            <input class="feedback form-control form-style" type="email" placeholder="email"></input>
+                            <textarea class="feedback form-control form-style" name="" id="" cols="23" rows="5"
+                                placeholder="message"></textarea>
+                            <button type="button" class="feedback btn btn-secondary">Submit form</button>
+                        </div>
+                    </div>
+                    <div class="container row low">
+                        <img src="./images/icons/whitetwitter.png" alt="">
+                        <img src="./images/icons/whitegoogle.png" alt="">
+                        <img src="./images/icons/whitefacebook.png" alt="">
+                        <img src="./images/icons/whitelinkedin.png" alt="">
+                        <img src="./images/icons/whiteyoutube.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class='copyright'>
+                <div class="container d-flex">
+                    <p>&copy; 2016 - Lenox Multi-Concept Template</p>
+                    <p class='ml-auto'>Created by
+                        <img src="./images/icons/icon.png" alt="">
+                        Tareq</p>
+                </div>
+
+            </section>
+        </div>
+    </footer>
+    <script src='./js/custom/blog.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
