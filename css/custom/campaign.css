@@ -112,7 +112,24 @@ display:flex;
     margin-top:20px;
     margin-bottom:50px;
 }
-/* contact us */
+/* campaign */
+.campaign a{
+    color:black;
+    text-decoration: underline;
+}
+.campaign{
+    border-radius: 5px;
+    background-color:rgba(247, 243, 243, 0.46);
+}
+.big img{
+    width: 100%;
+    height: 300px;
+}
+.small img{
+    margin-bottom:20px;
+    width: 100%;
+    height: 140px;
+}
 
 /* footer */
 .footer{

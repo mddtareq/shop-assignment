@@ -116,6 +116,26 @@ display:flex;
     .map img{
         width: 100%;
     }
+    .info p{
+        font-weight:600;
+    }
+    .info input,textarea{
+        outline: none;
+        padding:5px;
+        background-color:rgba(232, 226, 226, 0.618);
+        border-radius:3px;
+        border:none;
+        margin-bottom:20px;
+        width:100%;
+    }
+    .info input::placeholder,textarea::placeholder{
+        padding-left: 20px;
+    }
+    .btn-send input{
+        color:white;
+        background-color:gray;
+    }
+
 /* footer */
 .footer{
     margin-top: 60px;
